@@ -1,0 +1,125 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+
+body {
+    background-color: #f7f7f7; /* Light gray color for the background */
+    background-image: linear-gradient(#ebebeb 1px, transparent 1px),
+                        linear-gradient(0deg, #ebebeb 1px, transparent 1px);
+    background-size: 20px 20px; /* Size of each line */
+}
+  
+
+.header{
+    width: 100%;
+    height: 13vw;
+    background: rgb(245,236,186);
+    background: -moz-linear-gradient(180deg, rgba(245,236,186,1) 4%, rgba(255,216,0,1) 55%);
+    background: -webkit-linear-gradient(180deg, rgba(245,236,186,1) 4%, rgba(255,216,0,1) 55%);
+    background: linear-gradient(180deg, rgba(245,236,186,1) 4%, rgba(255,216,0,1) 55%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5ecba",endColorstr="#ffd800",GradientType=1);
+    border-bottom: solid;
+    border-color: grey; 
+    box-shadow: 0px 1px 15px rgb(155, 155, 155);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1{
+    color:rgb(255, 255, 255);
+    font-family: Quicksand;
+}
+
+.add-bar{
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.task-input {
+    width: 25vw;
+    border: 0px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.task-input input{
+    padding-left: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+
+.add-bar button{
+    background-color: rgb(207, 207, 207);
+    height: 40px;
+    width: 4vw;
+    border: none;
+    font-family: Quicksand;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.add-bar button:hover{
+    background-color: rgb(188, 187, 187);
+
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.body ul{
+    justify-self: center;
+    width: 50%;
+    height: 100%;
+    list-style-type: none;
+}
+
+.body li{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Quicksand;
+    display: flex;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.body li.checked{
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+
+
+.body li:nth-child(even){
+    background-color: rgba(182, 182, 182, 0.5);
+}
+
+li span{
+    margin-left: auto;
+}
